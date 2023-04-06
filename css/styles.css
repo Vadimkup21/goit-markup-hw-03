@@ -18,11 +18,57 @@ body {
   --color-white: #ffffff;
   --color-dairy: #fcfcfc;
 }
-/* header  */
 
+.container {
+  display: flex;
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: auto;
+}
+/* reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+}
+/* reset end */
+
+/* header  */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .page-header {
+  border-bottom: 1px solid #e7e9fc;
 }
 .logo {
+  margin-right: 76px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -48,6 +94,8 @@ body {
 }
 
 .site-nav {
+  gap: 40px;
+  display: flex;
 }
 
 .header-item {
@@ -58,6 +106,7 @@ body {
   color: var(--color-navy-blue);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .header-link:hover,
@@ -74,6 +123,12 @@ body {
 .header-adress {
   font-style: normal;
   text-decoration: none;
+  display: flex;
+  gap: 40px;
+}
+.header-adress-list {
+  display: flex;
+  gap: 40px;
 }
 .contacts {
   font-size: 16px;
@@ -89,6 +144,7 @@ body {
 /* section 1 */
 .first-section {
   background-color: var(--color-grey);
+  padding: 188px 0;
 }
 .title {
   font-weight: 700;
@@ -97,6 +153,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-white);
+  max-width: 496px;
 }
 .btn {
   background-color: var(--color-iris);
@@ -106,6 +163,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--color-white);
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
@@ -200,12 +263,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-cloud);
   text-decoration: none;
-}
-.link {
-  text-decoration: none;
-}
-.list {
-  list-style: none;
 }
 
 /* 
