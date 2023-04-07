@@ -97,10 +97,23 @@ button {
 }
 
 .site-nav {
-  gap: 40px;
   display: flex;
 }
+/* .site-nav .item {
+  display: flex;
+  margin-right: 40px;
+}
+.site-nav .item:last-child {
+  margin-right: 0;
+} */
 
+/* .site-nav .item:not(:last-child) {
+  margin-right: 40px;
+} */
+
+.site-nav .item + .item {
+  margin-left: 40px;
+}
 .header-item {
 }
 .header-link {
