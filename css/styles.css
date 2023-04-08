@@ -224,6 +224,7 @@ img {
   margin-bottom: 72px;
 }
 .second-list {
+  display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
@@ -240,11 +241,8 @@ img {
 .second-section {
   padding: 120px 0;
 }
-.second-list {
-  display: flex;
-  gap: 24px;
-}
-.second-item {
+
+.section-item {
   flex-basis: calc((100%-72px) / 4);
 }
 .title-hidden {
