@@ -322,6 +322,7 @@ img {
   text-decoration: none;
   color: var(--color-iris);
   margin-bottom: 16px;
+  display: inline-block;
 }
 .footer-link {
   display: inline-block;
