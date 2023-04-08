@@ -78,6 +78,7 @@ img {
 
 .site-nav {
   display: flex;
+  gap: 40px;
 }
 .item {
   margin-right: 40px;
@@ -223,7 +224,7 @@ img {
   gap: 24px;
   margin-bottom: 72px;
 }
-.second-list {
+.section-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
@@ -237,11 +238,17 @@ img {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
+.section-container {
+}
 /* section 2 */
 .second-section {
   padding: 120px 0;
 }
-
+.second-list {
+  display: flex;
+  gap: 24px;
+  width: calc((100% - 72px) / 4);
+}
 .section-item {
   flex-basis: calc((100%-72px) / 4);
 }
