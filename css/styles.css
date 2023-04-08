@@ -33,10 +33,12 @@ img {
 }
 .container {
   width: 1158px;
-  display: flex;
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
+}
+.container-flex {
+  display: flex;
 }
 
 /* header  */
@@ -319,10 +321,11 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-iris);
-  display: inline-block;
   margin-bottom: 16px;
 }
-
+.footer-link {
+  display: inline-block;
+}
 .white-logo {
   font-family: "Raleway";
   font-style: normal;
