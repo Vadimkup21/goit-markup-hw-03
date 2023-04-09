@@ -83,7 +83,6 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-iris);
-  margin-left: 156px;
 }
 .black-logo {
   font-family: Raleway, sans-serif;
@@ -306,7 +305,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate);
-  width: 264px;
+  text-align: center;
 }
 /* section 3 */
 .section-three {
@@ -334,10 +333,10 @@ img {
 
 .section-img {
   background-color: #ffffff;
-  width: calc((100%-72px) / 4);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
 .team-info {
   padding: 32px 16px;
