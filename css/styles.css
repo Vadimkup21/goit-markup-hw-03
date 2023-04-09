@@ -19,37 +19,57 @@ body {
   --color-white: #ffffff;
   --color-dairy: #fcfcfc;
 }
+/* reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
 }
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+/* reset end */
+
 .container {
   width: 1158px;
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0;
 }
 .container-flex {
   display: flex;
+  margin: 0;
 }
 
 /* header  */
 .navigation {
   display: flex;
   align-items: center;
-  gap: 40px;
 }
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  margin: 0;
 }
 .logo {
   margin-right: 76px;
@@ -75,15 +95,17 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-navy-blue);
-  margin-right: 76px;
 }
 
 .site-nav {
   display: flex;
   gap: 40px;
+  padding: 0;
 }
 .item {
   margin-right: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 /* .site-nav .item {
   display: flex;
@@ -97,9 +119,6 @@ img {
   margin-right: 40px;
 } */
 
-.site-nav .item + .item {
-  margin-left: 40px;
-}
 .header-item {
 }
 .header-link {
@@ -128,15 +147,19 @@ img {
   display: flex;
   gap: 40px;
 }
-.header-adress-list {
+.header-list {
   display: flex;
-  gap: 40px;
+  padding: 0;
 }
 .contacts {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate);
+  margin-right: 40px;
+}
+.contacts:nth-child(2n) {
+  margin-right: 0;
 }
 .contacts:hover,
 .contacts:focus {
@@ -156,6 +179,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-white);
   max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 .btn {
   background-color: var(--color-iris);
@@ -171,6 +197,8 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn:hover,
 .btn:focus {
@@ -270,7 +298,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate);
-  text-align: center;
+  width: 264px;
 }
 /* section 3 */
 .section-three {
@@ -338,6 +366,10 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-cloud);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
 }
 .footer-text {
   font-size: 16px;
@@ -345,6 +377,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-cloud);
   text-decoration: none;
+  width: 264px;
 }
 
 /* 
